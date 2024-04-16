@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=UdMj8iKSCoc
 
 No dataset original, existe nas tabelas que referenciam animes um atributo multivalorado dos `genres`.
 
- ![Ilustrando o atributo multivalorado](/img/1.png) .
+ ![Ilustrando o atributo multivalorado](/img/1.png)
 
 A solução foi escrever no script instruções que criam uma nova tabela `anime_genre.csv` com duas colunas: ID e gênero. 
 
@@ -35,6 +35,9 @@ A solução foi escrever no script instruções que criam uma nova tabela `anime
 
 User: de user_details, informações dos usuários
 malID, username, gender, birthday, location 
+
+## CSV files into PostgreSQL
+Seguir o tutorial [desse]([/img/1.png](https://www.youtube.com/watch?v=UdMj8iKSCoc)) vídeo. Os script de criação de tabela estão dentro da pasta `trabalho_SGBD`.
 
 ## Consultas
 
