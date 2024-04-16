@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=UdMj8iKSCoc
 
 No dataset original, existe nas tabelas que referenciam animes um atributo multivalorado dos `genres`.
 
- ![Ilustrando o atributo multivalorado](/assets/1.png) .
+ ![Ilustrando o atributo multivalorado](/img/1.png) .
 
 A solução foi escrever no script instruções que criam uma nova tabela `anime_genre.csv` com duas colunas: ID e gênero. 
 
@@ -39,4 +39,5 @@ malID, username, gender, birthday, location
 ## Consultas
 
 Usuários mais velhos tendem a dar notas mais altas para animes mais antigos?
+
 Qual é a nota média que usuários com mais de 30 anos dão para os animes atuais?
