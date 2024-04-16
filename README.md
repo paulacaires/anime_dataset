@@ -6,6 +6,11 @@ https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset/data?select=anime-
 Como as tabelas foram importadas para o PgAdmin:
 https://www.youtube.com/watch?v=UdMj8iKSCoc
 
+## Preparação do Ambiente
+
+1. Instalar Python
+2. Instalar Pandas pelo comando pip install pandas
+
 ## Tabelas
 
 Anime: De anime_dataset, tem as informações dos animes
