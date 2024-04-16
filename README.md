@@ -5,3 +5,22 @@ https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset/data?select=anime-
 
 Como as tabelas foram importadas para o PgAdmin:
 https://www.youtube.com/watch?v=UdMj8iKSCoc
+
+## Tabelas
+
+Anime: De anime_dataset, tem as informações dos animes
+anime_id, name, type, episodes, aired, rating
+
+Genres: De anime_dataset, tem as categorias dos animes
+anime_id, genres
+
+user_filtered: Para ter a nota que cada usuário deu pros animes
+
+User: de user_details, informações dos usuários
+malID, username, gender, birthday, location 
+
+
+
+
+
+Provar que animes com mais episódios são mais dropados (?)
