@@ -31,7 +31,7 @@ A solução foi escrever no script instruções que criam uma nova tabela `anime
 `anime_genero.csv`: De `anime_dataset`, tem as categorias dos animes
 - 'anime_id' e 'genre'
 
-`user_filtered.csv`: Para ter a nota que cada usuário deu pros animes. Não é criada no script porque tem muitas tuplas, por isso é exatamente igual ao do dataset no Kaggle.
+`user_rating.csv`: Para ter a nota que cada usuário deu pros animes. Não é criada no script porque tem muitas tuplas, por isso é exatamente igual ao do dataset no Kaggle.
 
 User: de user_details, informações dos usuários
 malID, username, gender, birthday, location 
