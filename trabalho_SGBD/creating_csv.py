@@ -1,3 +1,11 @@
+'''
+Nomes finais das tabelas:
+anime.csv
+anime_genero.csv
+user_filtered (a mesma tabela do dataset do Kaggle)
+user.csv
+'''
+
 import pandas as pd
 
 # Carregar os dados do arquivo CSV dos animes
@@ -5,6 +13,8 @@ df = pd.read_csv('../anime_dataset/anime-dataset-2023.csv')
 
 # Em anime, só quero incluir as colunas 'anime_id', 'Name', 'Type', 'Episodes', 'Aired' e 'Rating'
 anime = df[['anime_id', 'Name', 'Type', 'Episodes', 'Aired', 'Rating']]
+# Trocar os valores "UNKNOWN" dos episódios para o FLOAT -1.0. Gera um Warning
+anime['Episodes'] = anime['Episodes'].replace('UNKNOWN', -1.0)
 
 # Salvar o novo DataFrame em um novo arquivo CSV
 anime.to_csv('anime.csv', index=False)
