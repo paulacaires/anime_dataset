@@ -26,7 +26,7 @@ A solução foi escrever no script instruções que criam uma nova tabela `anime
 ## Tabelas
 
 `anime.csv`: De `anime_dataset`, tem as informações dos animes
-- 'anime_id', 'Name', 'Type', 'Episodes', 'Aired' e 'Rating'
+- 'anime_id', 'Name', 'Type', 'Episodes', 'Aired' e 'Score' (antigo rating)
 
 `anime_genero.csv`: De `anime_dataset`, tem as categorias dos animes
 - 'anime_id' e 'genre'
