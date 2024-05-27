@@ -3,8 +3,9 @@ CREATE TABLE anime (
 	anime_id 	INTEGER PRIMARY KEY NOT NULL,
 	anime_name	VARCHAR(500) NOT NULL,
 	anime_type	VARCHAR(255),
+	episodes 	FLOAT DEFAULT 1.0,
 	aired 		VARCHAR(255),
-	score 		FLOAT	
+	rating 		VARCHAR(255)	
 );
 
 /* 'anime_id' e o 'genres' */
@@ -25,9 +26,10 @@ CREATE TABLE mal_user ( /* My Anime List User */
 
 /* Igual à tabela user_filtered */
 CREATE TABLE user_rating (
-	user_id		INTEGER UNIQUE NOT NULL,
-	anime_id	INTEGER UNIQUE NOT NULL,
+	user_id		INTEGER NOT NULL,
+	anime_id	INTEGER NOT NULL,
 	rating 		FLOAT,
+	PRIMARY KEY (user_id, anime_id),
 	CONSTRAINT fk_userID_userRating FOREIGN KEY (user_id) REFERENCES mal_user(user_id),
 	CONSTRAINT fk_animeID_userRating FOREIGN KEY (anime_id) REFERENCES anime(anime_id)
 );
