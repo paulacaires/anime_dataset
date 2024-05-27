@@ -39,6 +39,10 @@ malID, username, gender, birthday, location
 ## CSV files into PostgreSQL
 Seguir o tutorial [desse]([/img/1.png](https://www.youtube.com/watch?v=UdMj8iKSCoc)) vídeo. Os script de criação de tabela estão dentro da pasta `trabalho_SGBD`.
 
+Depois de rodar o script do Python, gerando os 04 cvs, é necessário importar esses dados para o PgAdmin. 
+1. Crie as tabelas seguindo o script create_table em trabalhoSGBD.
+2. Assista o vídeo no YouTube pro resto
+
 ## Consultas
 
 Usuários mais velhos tendem a dar notas mais altas para animes mais antigos?
