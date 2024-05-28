@@ -36,6 +36,24 @@ df = pd.read_csv('../anime_dataset/users-details-2023.csv')
 
 # Em usuários, só quero incluir as colunas 'Mal ID', 'Username', 'Gender', 'Birthday', 'Location'
 users = df[['Mal ID', 'Username', 'Gender', 'Birthday', 'Location']]
+# Remover aspas simples na coluna 'Location' (causa erros na importação para o PgAdmin)
+users['Location'] = users['Location'].str.replace("'", "")
 
 # Salvar o dados dos usuários
 users.to_csv('user.csv', index=False)
+
+# Carregar os dados do arquivo CSV da avaliação dos usuários
+users_score = pd.read_csv('../anime_dataset/users-score-2023.csv')
+
+# Em users_score, só quero incluir as colunas 'user_id', 'anime_id', 'rating'
+users_score = users_score[['user_id', 'anime_id', 'rating']]
+# Apagar de users_scores os usuários que não estão na tabela de user (restrição de chave estrangeira)
+user_ids = users['Mal ID']
+user_score_filtered_fk = users_score[users_score['user_id'].isin(user_ids)]
+# Apagar de users_scores os animes que não estão na tabela de animes (restrição de chave estrangeira)
+animes_ids = anime['anime_id']
+user_score_filtered_fk = user_score_filtered_fk[user_score_filtered_fk['anime_id'].isin(animes_ids)]
+
+
+# Salvar o novo DataFrame em um novo arquivo CSV
+user_score_filtered_fk.to_csv('user_ratings.csv', index=False)
