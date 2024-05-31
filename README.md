@@ -1,5 +1,7 @@
 # anime_dataset
 
+Backup dos dados: https://drive.google.com/file/d/1gF4Nz4ZkZjv5T7jCmANFCJNiRdf3RPzG/view?usp=sharing
+
 Link do Kaggle dos dados originais, sem os tratamentos aplicados:
 https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset/data?select=anime-dataset-2023.csv
 
